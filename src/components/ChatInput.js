@@ -2,6 +2,7 @@ import styled from "styled-components";
 import {Button} from "@material-ui/core";
 import {db} from "../firebase";
 import firebase from 'firebase';
+import React, { useEffect, useState } from "react";
 
 function ChatInput({channelName, channelId}) {
     const [input, setInput] = useState("");
